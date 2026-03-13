@@ -1,0 +1,50 @@
+name: grimread
+description: GrimRead — Gothic Speed Reader. RSVP reading app with medieval library design.
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.16.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # File picking
+  file_picker: ^10.3.9
+  permission_handler: ^11.3.1
+
+  # EPUB — use "any" to let pub pick the real latest
+  epubx: any
+
+  # ZIP / DOCX / FB2 parsing (no license needed)
+  archive: ^3.6.1
+  xml: ^6.5.0
+
+  # Storage
+  sqflite: ^2.4.2
+  path_provider: ^2.1.4
+  shared_preferences: ^2.3.2
+
+  # UI & fonts
+  google_fonts: ^6.2.1
+  animations: ^2.0.11
+
+  # Utils
+  path: ^1.9.0
+  intl: ^0.20.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/splash/

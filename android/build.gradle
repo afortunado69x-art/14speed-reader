@@ -1,0 +1,11 @@
+// Root build.gradle — plugin versions are in settings.gradle
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+tasks.register("clean", Delete) {
+    delete layout.buildDirectory
+}
